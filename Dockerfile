@@ -9,7 +9,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 RUN mkdir /etc/mysql /usr/local/mysql
 COPY config.json /etc/mysql/
 COPY entrypoint.sh /usr/local/mysql/
-COPY mysql/* /usr/local/mysql/mysql/
+COPY mysql/ /usr/local/mysql/mysql/
 
 # 感谢 fscarmen 大佬提供 Dockerfile 层优化方案
    
